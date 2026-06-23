@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-netswitch - a NetSetMan-style GUI for switching network profiles on Linux.
+NetSetBoy - a NetSetMan-style GUI for switching network profiles on Linux.
 Wraps nmcli connection profiles. Requires NetworkManager + python3-tk.
 
     sudo apt install python3-tk
-    python3 netswitch.py
+    python3 netsetboy.py
 """
 
 import concurrent.futures
@@ -282,7 +282,7 @@ class ScanDialog(tk.Toplevel):
 class NetSwitch(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("netswitch")
+        self.title("netsetboy")
         self.geometry("640x600")
         self.minsize(520, 400)
         self.resizable(True, True)
